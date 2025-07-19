@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Dylan Magumura</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals project by Dylan Magumura. Showcasing responsive web design, semantic HTML, CSS Flexbox, and JavaScript skills.">
+  <meta name="author" content="Dylan Magumura">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Paris Eiffel Tower</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <figure>
+        <img
+          src="images/pexels-pixabay-532826.jpg"
+          srcset="
+            images/hero-small.webp 500w,
+            images/hero-medium.webp 1000w,
+            images/hero-large.webp 1500w"
+          sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
+          alt="Eiffel Tower in Paris during sunset">
+        <figcaption>A breathtaking view of the Eiffel Tower.</figcaption>
+      </figure>
+    </section>
+
+    <div class="content-wrapper">
+      <section class="sidebar">
+        <h2>Paris Facts</h2>
+        <p><strong>Area:</strong> 551,695 sq km</p>
+        <p><strong>Population:</strong> 2,165,000</p>
+        <p><strong>Capital:</strong> Paris</p>
+        <p><strong>Languages:</strong> French</p>
+        <p><strong>Currency:</strong> Euro (€)</p>
+        <p><strong>Time Zone:</strong> UTC+1</p>
+        <p><strong>Calling Code:</strong> +33</p>
+        <p><strong>Internet TLD:</strong> .fr</p>
+      </section>
+
+      <section class="weather">
+        <h2>Current Weather</h2>
+        <div class="weather-info">
+          <img src="images/8053162_cloud_expand_weather_forecast_night_icon.svg" alt="Cloudy weather icon" class="icon-mobile">
+          <p>Temperature: <span id="temp">18</span>°C</p>
+          <p>Wind Speed: <span id="speed">10</span> km/h</p>
+          <p>Wind Chill: <span id="chill">Calculating...</span></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Dylan Magumura</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

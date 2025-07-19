@@ -1,0 +1,88 @@
+/* Base Reset & Font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Layout containers */
+header,
+main,
+footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Banner replacing marquee */
+.banner {
+    padding: 1rem;
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Headings */
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: navy;
+    text-align: left;
+    margin-bottom: 1rem;
+    grid-column: 1 / -1;
+}
+
+/* Section headings */
+h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Main content layout - Mobile first */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        grid-column: 1 / -1;
+    }
+
+    .callout {
+        grid-column: 1 / 3;
+    }
+}
+
+/* Article paragraph */
+article p {
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+
+/* Callout box */
+.callout {
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 1rem 1.5rem;
+    margin: 2em 0;
+    border-radius: 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
