@@ -1,239 +1,221 @@
 :root {
-    --main-font: 'Open Sans', sans-serif;
-    --heading-font: 'Roboto Slab', serif;
-  
-    --primary-color: #c80808;
-    --accent-color: #0056b3;
-    --footer-bg: #0710b9;
-  
-    --text-color: #333;
-    --bg-color: #f4f4f4;
-    --card-bg: #fff;
-    --card-border: #ddd;
-  
-    --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
-    --shadow-dark: 0 4px 10px rgba(0, 0, 0, 0.3);
-  
-    --radius: 8px;
-    --gap: 20px;
-    --padding: 20px;
-  }
-  
-  body {
-    font-family: var(--main-font);
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    box-shadow: var(--shadow-light);
-  }
-  
-  header h1 {
-    font-family: var(--heading-font);
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  main {
-    flex: 1;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    gap: var(--gap);
-  }
-  
-  .hero-container {
-    position: relative;
-  }
-  
-  .hero {
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid var(--card-border);
-    box-shadow: var(--shadow-light);
-    background-color: var(--card-bg);
-  }
-  
-  .hero figure {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .hero figcaption {
-    padding: 10px;
-    font-style: italic;
-    color: #555;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-  }
-  
-  section {
-    background-color: var(--card-bg);
-    padding: var(--padding);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-light);
-    border: 1px solid var(--card-border);
-  }
-  
-  section h2 {
-    font-family: var(--heading-font);
-    color: var(--accent-color);
-    margin-top: 0;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .sidebar p,
-  .weather p {
-    margin: 8px 0;
-    line-height: 1.5;
-  }
-  
-  .sidebar strong {
-    color: var(--accent-color);
-  }
-  
-  .weather .weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .weather img.icon-mobile {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: var(--footer-bg);
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: auto;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  footer p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-  }
-  
-  @media (min-width: 768px) {
-    .content-wrapper {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .sidebar, .weather {
-      flex: 1;
-      min-width: 300px;
-    }
-  
-    .weather .weather-info {
-      flex-direction: row;
-      align-items: center;
-      gap: 15px;
-    }
-  
-    .weather img.icon-mobile {
-      margin-bottom: 0;
-    }
-  }
-  @media (min-width: 1024px) {
-    .hero-container {
-      position: relative;
-    }
-  
-    .content-wrapper {
-      position: absolute;
-      top: 20%;
-      left: 5%;
-      right: 5%;
-      display: flex;
-      justify-content: space-between;
-      z-index: 2;
-      
-    }
-    /* Hide icon on desktop */
+  --main-font: 'Open Sans', sans-serif;
+  --heading-font: 'Roboto Slab', serif;
+
+  --primary-color: #c80808;
+  --accent-color: #0056b3;
+  --footer-bg: #0710b9;
+
+  --text-color: #333;
+  --bg-color: #f4f4f4;
+  --card-bg: #fff;
+  --card-border: #ddd;
+
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  --radius: 8px;
+  --gap: 20px;
+  --padding: 20px;
+}
+
+body {
+  font-family: var(--main-font);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: var(--shadow-light);
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: var(--gap);
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-light);
+  background-color: var(--card-bg);
+}
+
+.hero figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero figcaption {
+  padding: 10px;
+  font-style: italic;
+  color: #555;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+section {
+  background-color: var(--card-bg);
+  padding: var(--padding);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--card-border);
+}
+
+section h2 {
+  font-family: var(--heading-font);
+  color: var(--accent-color);
+  margin-top: 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.sidebar p,
+.weather p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.sidebar strong {
+  color: var(--accent-color);
+}
+
+.weather .weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.weather img.icon-mobile {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
 @media (min-width: 768px) {
+  .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebar,
+  .weather {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .weather .weather-info {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
   .weather img.icon-mobile {
     display: none;
   }
 }
 
-/* Show icon on mobile */
+/* Hero overlay and enhanced desktop styling */
+@media (min-width: 1024px) {
+  .hero-container {
+    position: relative;
+  }
+
+  .content-wrapper {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .sidebar,
+  .weather {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-dark);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    max-width: 360px;
+    position: relative;
+    opacity: 0.8;
+  }
+
+  .sidebar h2,
+  .weather h2 {
+    background-color: var(--accent-color);
+    color: #fff;
+    margin: -20px -20px 15px -20px;
+    padding: 10px 16px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile-specific icon display */
 @media (max-width: 767px) {
   .weather img.icon-mobile {
     display: block;
-    width: 50px; /
+    width: 50px;
+    height: auto;
     margin-bottom: 10px;
     float: none;
   }
 }
-
-  
-    .sidebar,
-    .weather {
-      background-color: rgba(255, 255, 255, 0.95);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      border-radius: 8px;
-      padding: 20px;
-      max-width: 360px;
-      position: relative;
-      opacity: 0.8;
-    }
-  
-    .sidebar h2,
-    .weather h2 {
-      background-color: #0056b3;
-      color: #fff;
-      margin: -20px -20px 15px -20px;
-      padding: 10px 16px;
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-      font-size: 1.3rem;
-    }
-  
-    .weather img.icon-mobile {
-      float: right;
-      width: 1.5em;
-      height: auto;
-      margin-left: 0.5rem;
-    }
-  
-    .weather .weather-info {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-  
-  
-  
