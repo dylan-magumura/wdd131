@@ -180,7 +180,7 @@
       display: flex;
       justify-content: space-between;
       z-index: 2;
-      pointer-events: none;
+      
     }
     /* Hide icon on desktop */
 @media (min-width: 768px) {
