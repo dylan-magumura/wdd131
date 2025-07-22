@@ -207,7 +207,6 @@
       border-radius: 8px;
       padding: 20px;
       max-width: 360px;
-      pointer-events: auto;
       position: relative;
       opacity: 0.8;
     }
