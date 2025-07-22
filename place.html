@@ -20,42 +20,44 @@
   </header>
 
   <main>
-    <section class="hero">
-      <figure>
-        <img
-          src="images/pexels-pixabay-532826.jpg"
-          srcset="
-            images/hero-small.webp 500w,
-            images/hero-medium.webp 1000w,
-            images/hero-large.webp 1500w"
-          sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
-          alt="Eiffel Tower in Paris during sunset">
-        <figcaption>A breathtaking view of the Eiffel Tower.</figcaption>
-      </figure>
-    </section>
-
-    <div class="content-wrapper">
-      <section class="sidebar">
-        <h2>Paris Facts</h2>
-        <p><strong>Area:</strong> 551,695 sq km</p>
-        <p><strong>Population:</strong> 2,165,000</p>
-        <p><strong>Capital:</strong> Paris</p>
-        <p><strong>Languages:</strong> French</p>
-        <p><strong>Currency:</strong> Euro (€)</p>
-        <p><strong>Time Zone:</strong> UTC+1</p>
-        <p><strong>Calling Code:</strong> +33</p>
-        <p><strong>Internet TLD:</strong> .fr</p>
+    <div class="hero-container">
+      <section class="hero">
+        <figure>
+          <img
+            src="images/hero-medium.jpg"
+            srcset="
+              images/hero-large.jpg 500w,
+              images/hero-small.jpg 1000w,
+              images/hero-medium.jpg 1500w"
+            sizes="(max-width: 600px) 500px, (max-width: 1200px) 1000px, 1500px"
+            alt="Eiffel Tower in Paris during sunset">
+          <figcaption>A breathtaking view of the Eiffel Tower.</figcaption>
+        </figure>
       </section>
 
-      <section class="weather">
-        <h2>Current Weather</h2>
-        <div class="weather-info">
-          <img src="images/8053162_cloud_expand_weather_forecast_night_icon.svg" alt="Cloudy weather icon" class="icon-mobile">
-          <p>Temperature: <span id="temp">18</span>°C</p>
-          <p>Wind Speed: <span id="speed">10</span> km/h</p>
-          <p>Wind Chill: <span id="chill">Calculating...</span></p>
-        </div>
-      </section>
+      <div class="content-wrapper">
+        <section class="sidebar">
+          <h2>Data</h2>
+          <p><strong>Area:</strong> 551,695 sq km</p>
+          <p><strong>Population:</strong> 2,165,000</p>
+          <p><strong>Capital:</strong> Paris</p>
+          <p><strong>Languages:</strong> French</p>
+          <p><strong>Currency:</strong> Euro (€)</p>
+          <p><strong>Time Zone:</strong> UTC+1</p>
+          <p><strong>Calling Code:</strong> +33</p>
+          <p><strong>Internet TLD:</strong> .fr</p>
+        </section>
+
+        <section class="weather">
+          <h2>Current Weather</h2>
+          <div class="weather-info">
+            <img src="images/8053162_cloud_expand_weather_forecast_night_icon.svg" alt="Cloudy weather icon" class="icon-mobile">
+            <p>Temperature: <span id="temp">18</span>°C</p>
+            <p>Wind Speed: <span id="speed">10</span> km/h</p>
+            <p>Wind Chill: <span id="chill">Calculating...</span></p>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
 
