@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+body,main {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1rem;
+    
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+    background: rgb(162, 158, 158);
+    animation: fade 15s ease-in forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+
+    }
+
+    100%{
+        opacity: 1;
+        filter: brightness(1);
+    }
+    
+}
