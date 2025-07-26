@@ -1,0 +1,127 @@
+:root {
+  --bg-color: #e0e0e0; /* Adjusted to a slightly darker grey */
+  --text-color: #222;
+  --card-bg: #ada8a8;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --highlight: #004080;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--highlight);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+figure {
+  background-color: lightslategray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+figure:hover {
+  transform: scale(1.02);
+}
+
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  padding: 1rem;
+}
+
+figcaption h3 {
+  margin: 0 0 0.5rem;
+  color: var(--highlight);
+}
+
+figcaption p {
+  margin: 0.3rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ddd;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: var(--highlight);
+  z-index: 1000;
+}
+
+#nav-menu.open {
+  display: flex;
+}
+
+#nav-menu a {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.temple-card {
+  background-color: #f0f0f0;
+}
