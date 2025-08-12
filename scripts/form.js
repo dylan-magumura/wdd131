@@ -1,32 +1,10 @@
-
-
 const products = [
-    {
-      id: "fc-1888",
-      name: "flux capacitor",
-      averagerating: 4.5
-    },
-    {
-      id: "fc-2050",
-      name: "power laces",
-      averagerating: 4.7
-    },
-    {
-      id: "fs-1987",
-      name: "time circuits",
-      averagerating: 3.5
-    },
-    {
-      id: "ac-2000",
-      name: "low voltage reactor",
-      averagerating: 3.9
-    },
-    {
-      id: "jj-1969",
-      name: "warp equalizer",
-      averagerating: 5.0
-    }
-  ];
+  { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
+  { id: "fc-2050", name: "power laces", averagerating: 4.7 },
+  { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
+  { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
+  { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
+];
 
 window.addEventListener("DOMContentLoaded", () => {
   const select = document.getElementById("productName");
@@ -41,21 +19,17 @@ window.addEventListener("DOMContentLoaded", () => {
   if (lastMod) {
     lastMod.textContent = document.lastModified;
   }
-});
-window.addEventListener("DOMContentLoaded", () => {
+
+  const form = document.querySelector("form");
+  form.addEventListener("submit", () => {
     let reviewCount = localStorage.getItem("reviewCount");
-  
-    if (!reviewCount) {
-      reviewCount = 1;
-    } else {
-      reviewCount = parseInt(reviewCount) + 1;
-    }
-  
+    reviewCount = reviewCount ? parseInt(reviewCount) + 1 : 1;
     localStorage.setItem("reviewCount", reviewCount);
-  
-    const counter = document.getElementById("reviewCount");
-    if (counter) {
-      counter.textContent = reviewCount;
-    }
   });
-  
+
+  const counter = document.getElementById("reviewCount");
+  if (counter) {
+    const reviewCount = localStorage.getItem("reviewCount") || 0;
+    counter.textContent = reviewCount;
+  }
+});
