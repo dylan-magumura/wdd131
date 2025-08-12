@@ -1,17 +1,62 @@
 /* Define theme variables */
 :root {
-    --primary-color: #6a0dad;
-    --primary-dark: #4b0082;
-    --bg-light: #f5f0fa;
-    --card-bg: #d6cbdc;
-    --header-bg: #02003c;
-    --text-dark: #333;
-    --text-light: #fff;
-    --border-color: #ccc;
-    --label-color: #100150;
-    --checkbox-size: 18px;
-  }
-  
+  --primary-color: #6a0dad;
+  --primary-dark: #4b0082;
+  --bg-light: #f5f0fa;
+  --card-bg: #d6cbdc;
+  --header-bg: #02003c;
+  --text-dark: #1a1a1a;      /* Darker than #333 */
+  --text-light: #fff;
+  --border-color: #888;       /* Darker border for inputs */
+  --label-color: #1a1a1a;     /* Darker label for better contrast */
+  --checkbox-size: 18px;
+}
+
+body {
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+/* Label and legend colors */
+label,
+legend {
+  color: var(--label-color);
+}
+
+/* Input, select, textarea borders */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  border: 1.5px solid var(--border-color);
+}
+
+/* Radio labels background when unchecked */
+.rating label {
+  border: 2px solid #666;  /* Darker border */
+  background-color: white;
+  color: var(--text-dark);
+}
+
+/* Radio labels background when checked */
+.rating input[type="radio"]:checked + label {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border-color: var(--primary-dark);
+}
+
+/* Footer and header text */
+header,
+footer {
+  color: var(--text-light);
+}
+
+/* Ensure the required asterisk is clearly visible */
+.required {
+  color: #d32f2f; /* brighter red for better visibility */
+  font-weight: bold;
+}
+
   /* Reset */
   * {
     margin: 0;
@@ -174,4 +219,5 @@
     color: red;
     font-weight: bold;
 }
+
   
