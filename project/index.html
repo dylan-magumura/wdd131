@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quantum Visuals - Wedding & Portrait Photography Portfolio" />
+  <meta name="author" content="Quantum Visuals" />
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/site.css" />
+  <!-- Scripts -->
+  <script src="scripts/script.js" defer></script>
+
+  <title>Quantum Visuals | Photography Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Quantum Visuals Logo">
+    <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="rates.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero">
+            <picture>
+              <source srcset="images/hero-large.jpg" media="(min-width: 1024px)">
+              <img src="images/hero-small.jpg" alt="Showcase photography">
+            </picture>
+          
+            <h1>Quantum Visuals</h1>
+            <article>
+              <img src="images/photographer.jpg" alt="Photographer in action" loading="lazy">
+              <p>
+                "Capturing timeless memories with clarity and creativity..."
+              </p>
+            </article>
+          </div>
+          
+      <h1>Quantum Visuals</h1>
+      <article>
+        <img src="images/photographer.jpg" alt="Photographer in action" loading="lazy">
+        <p>
+          "Capturing timeless memories with clarity and creativity. Whether it's a wedding, outdoor portrait,
+          or special event, Quantum Visuals brings your moments to life with elegance and emotion."
+        </p>
+      </article>
+    </div>
+
+    <!-- About / Mission Section -->
+    <section>
+      <h2 class="section-heading">Our Mission</h2>
+      <div class="history-flex">
+        <p>
+          Quantum Visuals was born from a passion for storytelling through photography. With a focus on emotion,
+          light, and detail, we specialize in capturing weddings, portraits, and special occasions.
+        </p>
+        <img src="images/camera.jpg" alt="Camera gear on table" loading="lazy">
+        <p>
+          Our clients value timeless, high-quality images that reflect real connection. Every session is
+          guided by professionalism, creativity, and care for our clients' unique stories.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery with Filters -->
+    <section>
+      <h2 class="section-heading">Featured Work</h2>
+
+      <!-- Filter Navigation -->
+      <nav class="filter-nav">
+        <a href="#" data-category="all" class="active">All</a>
+        <a href="#" data-category="wedding">Weddings</a>
+        <a href="#" data-category="portrait">Portraits</a>
+      </nav>
+
+      <!-- Gallery Container -->
+      <div id="homepage-gallery"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 📸 Quantum Visuals | Capturing Life's Best Moments</p>
+    <nav class="socialmedia">
+      <a href="http://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+      <a href="http://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="http://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="http://linkedin.com"><img src="images/linkedin.svg" alt="Linkedin"></a>
+    </nav>
+  </footer>
+
+  
+</body>
+
+</html>
